@@ -2,7 +2,7 @@ main{
     flex:1;
 }
 body{
-    background-image: url("bg3.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("bg3.png");
     background-repeat: no=repeat;
     background-attachment: fixed;
     background-position: center;
@@ -19,11 +19,14 @@ body{
 
 }
 #logo{
-        position: relative;
-        left:76px;
+ width: 50px;
+    height: 50px;
 }
 #playlist{
-  appearance: none;
+
+
+
+    appearance: none;
     -webkit-appearance: none;
 
     background: transparent;
@@ -41,7 +44,6 @@ body{
     position: relative;
     border-radius: 10px;
     padding: 12px 24px;
-
     cursor: pointer;
     transition: 0.3s ease;
 font-size: 42px;
@@ -52,6 +54,7 @@ font-size: 42px;
             position:relative ;
             right: -130px;
             top: 96px;
+            
            
 
 }
@@ -265,37 +268,69 @@ font-size: 42px;
     object-fit: contain;
 }
 footer{
-        background-color: rgb(33, 122, 234);
-        color:black;
-        font-family: "Press Start 2P";
-        width:100%;
-        padding:2px 0;
-        text-align:center;
-        margin-top:auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 15px;
 
 
-
+    font-family: "Press Start 2P";
+    width: 100%;
+    min-height: 54px;
+    padding: 2px 12px;
+    box-sizing: border-box;
+    margin-top: auto;
 }
-footer span{
-    display: inline-block;
-    transform: translateY(-16px);
+
+.footer-center {
     text-align: center;
+}
+
+#lefty{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+#miku {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.header{
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius:20px;
+    padding:1px 8px;
+   
+   display:flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   
+}
+#hder{
+    font-family: "Press Start 2P";
+    font-size:15pt;
+    align-self: center;
+    text-align: left;
+   
     
 }
-#lefty{
-        position:absolute;
-        transform: translateY(-50%);
-    white-space: nowrap;
-    top:622px;
-    left:1020px;
-
-    }
-#miku{
-        width:50px  ;
-        height:50px;
-        position: relative;
-        left:-540px;
-}
-
-
-
